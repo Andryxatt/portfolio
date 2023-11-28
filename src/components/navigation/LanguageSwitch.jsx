@@ -13,7 +13,7 @@ const LanguageSwitch = () => {
             {
               LANGUAGES.map((lang) => {
                 return (
-                    <option key={lang.code} value={lang.code}>{lang.label}</option>
+                    <option key={lang.code} selected={lang.isDefault} value={lang.code}>{lang.label}</option>
                 )
               })    
             }
