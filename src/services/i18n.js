@@ -76,7 +76,7 @@ const resources = {
     .use(initReactI18next)
     .init({
       resources,
-      lng: localStorage.getItem("language") || "en" ,
+      lng: localStorage.getItem("language") !== undefined ? localStorage.getItem("language") : "en" ,
       interpolation: {
         escapeValue: false,
       },

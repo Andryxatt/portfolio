@@ -4,6 +4,7 @@ import LinkedinSvg from '../assets/Linkedin.svg'
 import TelegramSvg from '../assets/Telegram.svg'
 import GithubSvg from '../assets/Github.svg'
 import Footer from './Footer'
+
 const Layout = () => {
     return (
         <>
@@ -20,4 +21,5 @@ const Layout = () => {
         </>
     )
 }
+
 export default Layout
