@@ -25,7 +25,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="all-media">
-                        <h2><span className='pink'>#</span></h2>
+                        <h2><span className='pink'>#</span>all-media</h2>
                     </div>
                 </div>
     )

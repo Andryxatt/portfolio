@@ -9,10 +9,16 @@ const Layout = () => {
     return (
         <>
             <div className='wrapper-all'>
-                <div className='social'>
-                    <img src={GithubSvg} alt="Github" className="cursor-pointer icon-hover"/>
-                    <img src={LinkedinSvg} alt="Linkedin" className="cursor-pointer icon-hover"/>
-                    <img src={TelegramSvg} alt="Telegram" className="cursor-pointer icon-hover"/>
+                <div className='social '>
+                    <a href="https://github.com/Andryxatt" target="blank">
+                        <img src={GithubSvg} alt="Github" className="cursor-pointer icon-hover" />
+                    </a>
+                    <a href='www.linkedin.com/in/andrii-vlasiuk-web-dev' target="blank">
+                        <img src={LinkedinSvg} alt="Linkedin" className="cursor-pointer icon-hover" />
+                    </a>
+                    <a href='https://t.me/Andryxatt' target="blank">
+                        <img src={TelegramSvg} alt="Telegram" className="cursor-pointer icon-hover" />
+                    </a>
                 </div>
                 <Navigation />
                 <Outlet />

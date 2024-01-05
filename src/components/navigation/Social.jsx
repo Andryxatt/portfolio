@@ -1,10 +1,16 @@
 import { FaTwitterSquare, FaLinkedin, FaTelegram } from "react-icons/fa"
 const Social = () => {
     return (
-        <div className="flex flex-row gap-2">
-            <FaTwitterSquare className="cursor-pointer icon-hover" color="accent" size={'2rem'} />
-            <FaLinkedin className="cursor-pointer icon-hover" color="accent" size={'2rem'} />
-            <FaTelegram className="cursor-pointer icon-hover" color="accent" size={'2rem'} />
+        <div className="social-absolute">
+            <a href="https://github.com/Andryxatt" target="blank">
+                <FaTwitterSquare className="cursor-pointer icon-hover" color="accent" size={'2rem'} />
+            </a>
+            <a href="www.linkedin.com/in/andrii-vlasiuk-web-dev">
+                <FaLinkedin className="cursor-pointer icon-hover" color="accent" size={'2rem'} />
+            </a>
+            <a>
+                <FaTelegram className="cursor-pointer icon-hover" color="accent" size={'2rem'} />
+            </a>
         </div>
     )
 }

@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 const NavLinks = () => {
     const { t } = useTranslation();
-
     const links = [
         {
             name: "Home",
@@ -23,7 +22,6 @@ const NavLinks = () => {
             path: "/contact"
         }
     ]
-
     return (
         <ul>
             {links.map((link, index) => {
