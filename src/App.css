@@ -1,0 +1,337 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  background-color: #19191B;
+}
+.bg-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevents spots from affecting content interaction */
+  z-index: -1; /* Places the spots behind the content */
+  background: radial-gradient(600px at 10% 10%, rgba(84, 84, 212, 0.4), transparent),
+              radial-gradient(500px at 76% 20%, rgba(251, 168, 28, 0.2), rgba(224, 86, 136, 0.1), transparent);
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .bg-gradient::before {
+    background: radial-gradient(300px at 10% 5%, rgba(84, 84, 212, 0.4), transparent),
+    radial-gradient(300px at 36% 25%, rgba(251, 168, 28, 0.1), rgba(224, 86, 136, 0.1), transparent);
+  }
+}
+.animate-polygon1 {
+  animation: move-polygon1 2s infinite;
+}
+
+.animate-polygon2 {
+  animation: move-polygon2 2s infinite;
+}
+
+@keyframes move-polygon1 {
+  0% {
+    bottom: 10px;
+    left: 20px;
+  }
+
+  50% {
+    bottom: 20px;
+    left: 40px;
+  }
+
+  100% {
+    bottom: 10px;
+    left: 20px;
+  }
+}
+
+@keyframes move-polygon2 {
+  0% {
+    bottom: 20px;
+    left: 40px;
+  }
+
+  50% {
+    bottom: 10px;
+    left: 30px;
+  }
+
+  100% {
+    bottom: 20px;
+    left: 40px;
+  }
+}
+
+.animate-circle1 {
+  animation: move-circle1 2s infinite;
+}
+
+.animate-circle2 {
+  animation: move-circle2 2s infinite;
+}
+
+@keyframes move-circle1 {
+  0% {
+    top: 40px;
+    right: 80px;
+  }
+
+  50% {
+    top: 30px;
+    right: 90px;
+  }
+
+  100% {
+    top: 40px;
+    right: 80px;
+  }
+}
+
+@keyframes move-circle2 {
+  0% {
+    top: 20px;
+    right: 90px;
+  }
+
+  50% {
+    top: 40px;
+    right: 80px;
+  }
+
+  100% {
+    top: 20px;
+    right: 90px;
+  }
+}
+
+.animate-thunder {
+  animation: vibrate-thunder 2.5s infinite;
+}
+
+@keyframes vibrate-thunder {
+  1% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  5% {
+    transform: translateX(-1px) rotate(-0.5deg);
+  }
+
+  10% {
+    transform: translateX(1px) rotate(0.5deg);
+  }
+
+  15% {
+    transform: translateX(-1.5px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translateX(1.5px) rotate(1deg);
+  }
+
+  25% {
+    transform: translateX(-2px) rotate(-1.5deg);
+  }
+
+  30% {
+    transform: translateX(2px) rotate(1.5deg);
+  }
+
+  35% {
+    transform: translateX(-2.5px) rotate(-2deg);
+  }
+
+  40% {
+    transform: translateX(2.5px) rotate(2deg);
+  }
+
+  45% {
+    transform: translateX(-3px) rotate(-2.5deg);
+  }
+
+  50% {
+    transform: translateX(3px) rotate(2.5deg);
+  }
+
+  55% {
+    transform: translateX(-3.5px) rotate(-3deg);
+  }
+
+  60% {
+    transform: translateX(3.5px) rotate(3deg);
+  }
+
+  65% {
+    transform: translateX(-4px) rotate(-3.5deg);
+  }
+
+  70% {
+    transform: translateX(4px) rotate(3.5deg);
+  }
+
+  75% {
+    transform: translateX(-4.5px) rotate(-4deg);
+  }
+
+  80% {
+    transform: translateX(4.5px) rotate(4deg);
+  }
+
+  85% {
+    transform: translateX(-5px) rotate(-4.5deg);
+  }
+
+  90% {
+    transform: translateX(5px) rotate(4.5deg);
+  }
+
+  95% {
+    transform: translateX(-5.5px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+
+.animate-add {
+  animation: rotate-add 2s infinite;
+}
+
+@keyframes rotate-add {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(60deg);
+  }
+
+  50% {
+    transform: rotate(-180deg);
+  }
+
+  75% {
+    transform: rotate(-120deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.gradient-bg-red::after {
+  position: absolute;
+  content:'';
+  top:20px;
+  right: -200px;
+  rotate: -30deg;
+  width: 950px;
+  height: 450px;
+  border-radius: 150px;
+  background: radial-gradient(50% 50% at 50% 50%,
+      rgba(224, 86, 136, 0.1) 0%,
+      rgba(25, 25, 27, 0) 100%)
+}
+
+.gradient-bg-blue::after {
+  position: absolute;
+  content: '';
+  top:-100px;
+  left: -50px;
+  rotate: -60deg;
+  width: 450px;
+  height: 950px;
+  border-radius: 100px;
+  background: radial-gradient(50% 50% at 50% 50%,
+      rgba(84, 84, 212, 0.1) 10%,
+      rgba(25, 25, 27, 0) 100%)
+}
+@media screen and (max-width: 768px) {
+  .gradient-bg-red::after {
+    width: 100%;
+    right: 0;
+    rotate: 0;
+    height: 100%;
+  }
+
+  .gradient-bg-blue::after {
+    width: 100%;
+    left: 0;
+    rotate: 0;
+    height: 100%;
+  }
+}
+
+/* .banner::after{
+  position: absolute;
+  content: '';
+  top: 12%;
+  left: 8%;
+  z-index: -1;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  width:100%;
+  height: 100%;
+  rotate: -61deg;
+} */
+@media (max-width: 1200px) {
+  .banner::after {
+    top: 12%;
+    left: 28%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner::after {
+    top: 20%;
+    left: 20%;
+    max-width: 200px; /* Уменьшаем размер для более маленьких экранов */
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner::after {
+    top: 10%;
+    left: 20%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+.swiper-pagination {
+  position:  relative !important; /* Make sure it's positioned relative to its container */
+  top: 50px; /* Move down by 50 pixels */
+}
+.swiper-pagination-bullet{
+  background: #fff !important;
+}
+.swiper-container {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+}
+
+.swiper-slide {
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth scaling and opacity transition */
+}
+
+/* Scale effect on active slide */
+.swiper-slide-active {
+  transform: scale(1.1); /* Slightly enlarge the active slide */
+  opacity: 0.5; /* Fully visible active slide */
+}
+
+/* Make adjacent slides less opaque */
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.3; /* Default opacity for inactive slides */
+}
+.swiper-slide-next{
+  opacity: 1 !important;
+}
+
+
