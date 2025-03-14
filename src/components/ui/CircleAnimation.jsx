@@ -1,9 +1,7 @@
 import circle1 from '../../assets/images/circle1.svg'
 import circle2 from '../../assets/images/circle2.svg'
-type Props = {
-    positionStyle: string,
-}
-export const CircleAnimation = ({ positionStyle }: Props) => {
+
+export const CircleAnimation = (positionStyle) => {
     return (
         <div className={`${positionStyle}`}>
             <img src={circle1} alt="Circle 1" className="w-[40px] h-[40px]" />

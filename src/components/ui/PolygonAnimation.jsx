@@ -1,9 +1,7 @@
 import polygon1 from '../../assets/images/polygon1.svg'
 import polygon2 from '../../assets/images/polygon2.svg'
-type Props = {
-    positionStyle: string
-}
-export const PolygonAnimation = ({ positionStyle }: Props) => {
+
+export const PolygonAnimation = (positionStyle) => {
     return (
         <div className={`${positionStyle}`}>
             <img src={polygon1} alt="Polygon 1" className="w-[48px] h-[48px]" />

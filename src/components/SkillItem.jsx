@@ -1,11 +1,4 @@
-import { IconType } from 'react-icons'
-type Props = {
-    Icon: IconType,
-    color: string,
-    header: string
-    description: string
-}
-const SkillItem = ({ Icon, color = '#5454D4', header, description }: Props) => {
+const SkillItem = ( Icon, color = '#5454D4', header, description  ) => {
     return (
         <div className='flex flex-col justify-center items-center p-4 max-w-[200px]'>
             <div className="relative w-[52px] h-[52px] flex items-center justify-center">

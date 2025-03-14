@@ -1,8 +1,5 @@
 import add from '../../assets/images/add.svg'
-type Props = {
-    positionStyle: string
-}
-export const AddAnimation = ({ positionStyle }: Props) => {
+export const AddAnimation = ( positionStyle ) => {
     return (
         <div className={`${positionStyle}`}> <img src={add} alt="Add" className="w-[28px] h-[28px]" /></div>
         // <div className={`${positionStyle} will-change-transform`}>

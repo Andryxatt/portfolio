@@ -1,8 +1,6 @@
 import thunder from '../../assets/images/thunder.svg'
-type Props = {
-    positionStyle: string
-}
-export const ThunderAnimation = ( { positionStyle }: Props) => {
+
+export const ThunderAnimation = ( positionStyle) => {
     return (
         <div className={`${positionStyle}` }>
             <img src={thunder} alt="Thunder"
