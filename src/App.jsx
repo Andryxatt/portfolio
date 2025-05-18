@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Banner from './components/Banner';
 import ContactMe from './components/ContactMe';
@@ -15,7 +15,6 @@ import Terms from './components/pages/Terms';
 
 function App() {
   return (
-    <Router>
       <div className='flex flex-col min-h-screen bg-gradient'>
         <div className='noise mx-auto flex flex-col justify-center w-full max-w-[1440px] md:max-w-[1200px] sm:max-w-[768px] font-nunito text-white'>
           <Header />
@@ -49,7 +48,6 @@ function App() {
         </div>
           <Footer />
       </div>
-    </Router>
   );
 }
 
