@@ -3,11 +3,11 @@ const Banner = () => {
   return (
     <Element name="about">
       <div className="mt-20 px-3">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-center">About Me</h1>
+        <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-center">About Me</h2>
 
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
-            I’m a Frontend Developer based in <strong>Khmelnytskyi, Ukraine</strong>, with over <strong>2 years</strong> of hands-on experience building scalable and high-performance web applications. I specialize in integrating third-party APIs and enhancing business process automation. My core stack includes <strong>React</strong>, <strong>Nest.js</strong>, and <strong>.NET</strong>.
+            I’m a developer based in <strong>Khmelnytskyi, Ukraine</strong>, with over <strong>3 years</strong> of hands-on experience building scalable and high-performance web applications. I specialize in integrating third-party APIs and enhancing business process automation. My core stack includes <strong>React</strong>, <strong>Nest.js</strong>, and <strong>.NET</strong>.
           </p>
 
           <p>

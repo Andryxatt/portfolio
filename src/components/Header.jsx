@@ -41,7 +41,7 @@ const Header = () => {
         <nav
           className={`${isMenuOpen ? 'absolute z-10 backdrop-blur-lg' : 'hidden'}
           flex-col md:flex md:flex-row md:items-center md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto md:bg-transparent py-4 md:py-0 `}>
-          <ul className='flex flex-col gap-4 opacity-70 text-semi-bold md:flex-row p-4 '>
+          <ul className='flex flex-col gap-4 opacity-70 text-semi-bold md:flex-row p-4 text-lg'>
             <li className='hover:opacity-70 cursor-pointer' onClick={() => handleNavigateAndScroll('home')}>
               Home
             </li>

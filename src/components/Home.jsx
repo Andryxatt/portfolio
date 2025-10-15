@@ -9,8 +9,8 @@ const Home = () => {
         <div className="flex sm:flex-row flex-col w-full h-auto sm:mt-16 mt-4 px-3">
             {/* Left Side (Text) */}
             <div className="w-full flex flex-col mb-4">
-                <h1 className="md:text-[4rem] sm:text-[3rem] text-[2rem] leading-tight font-bold mb-4">Build Your Awesome Web App</h1>
-                <p className="text-sm mb-6 leading-normal opacity-70">
+                <h2 className="md:text-[4rem] sm:text-[3rem] text-[2rem] leading-tight font-bold mb-4">Build Your Awesome Web App</h2>
+                <p className="text-lg mb-6 leading-normal opacity-70">
                     Andrii Vlasiuk is a full-stack web developer.<br />
                     React + TypeScript + Vite + NestJS + TypeORM + Postgres. <br />
                     <Link to="" className='color-blue-500 text-primary hover:underline'>And more other technologies.</Link>

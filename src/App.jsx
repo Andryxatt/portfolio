@@ -1,37 +1,39 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-import Banner from './components/Banner';
-import ContactMe from './components/ContactMe';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import TechSkills from './components/TechSkills';
-
-import Support from './components/pages/Support';
-import PrivacyPolicy from './components/pages/PrivacyPolicy';
-import Terms from './components/pages/Terms';
+import Banner from "./components/Banner";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import TechSkills from "./components/TechSkills";
+import Support from "./components/pages/Support";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy";
+import Terms from "./components/pages/Terms";
+import Background2 from "./components/Background2";
 
 function App() {
   return (
-      <div className='flex flex-col min-h-screen bg-gradient'>
-        <div className='noise mx-auto flex flex-col justify-center w-full max-w-[1440px] md:max-w-[1200px] sm:max-w-[768px] font-nunito text-white'>
-          <Header />
-        </div>
+    <div className="relative flex flex-col min-h-screen bg-gradient text-white font-nunito overflow-x-hidden">
+      {/* 🔹 Фон */}
+      <Background2 />
 
-        {/* Main content */}
-        <main className='flex-grow'>
+      {/* 🔹 Контент (має обмежену ширину) */}
+      <div className="relative z-10 flex flex-col justify-center w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-10 lg:px-16 flex-grow">
+        <Header />
+
+        <main className="flex-grow mt-4">
           <Routes>
             <Route
               path="/"
               element={
-                <div className='noise mx-auto flex flex-col justify-center w-full max-w-[1440px] md:max-w-[1200px] sm:max-w-[768px] font-nunito text-white'>
+                <>
                   <Home />
                   <Banner />
                   <TechSkills />
                   <Projects />
-                </div>
+                </>
               }
             />
             <Route path="/support" element={<Support />} />
@@ -40,14 +42,16 @@ function App() {
           </Routes>
         </main>
 
-        {/* Contact Section */}
-        <div className='bg-[#1E1E20] mb-24'>
-          <div className='p-5 mx-auto flex flex-col justify-center w-full max-w-[1440px] md:max-w-[1200px] sm:max-w-[768px] pt-10 sm:pt-6 md:pt-8 gap-4 sm:gap-2 md:gap-3 font-nunito text-white '>
+    
+      </div>
+    <section className="bg-[#1E1E20] mt-12 mb-12 rounded-2xl shadow-lg overflow-hidden">
+          <div className="p-6 sm:p-8 md:p-10 flex flex-col justify-center gap-6">
             <ContactMe />
           </div>
-        </div>
-          <Footer />
-      </div>
+        </section>
+      {/* 🔹 Футер (тепер на всю ширину!) */}
+      <Footer />
+    </div>
   );
 }
 
