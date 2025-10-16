@@ -1,4 +1,5 @@
 import { Element } from "react-scroll";
+
 const Banner = () => {
   return (
     <Element name="about">
@@ -7,20 +8,58 @@ const Banner = () => {
 
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
-            I’m a developer based in <strong>Khmelnytskyi, Ukraine</strong>, with over <strong>3 years</strong> of hands-on experience building scalable and high-performance web applications. I specialize in integrating third-party APIs and enhancing business process automation. My core stack includes <strong>React</strong>, <strong>Nest.js</strong>, and <strong>.NET</strong>.
+            I’m a frontend developer based in <strong>Khmelnytskyi, Ukraine</strong>, with over <strong>3 years</strong> of hands-on experience building modern, scalable, and high-performance web applications. My core stack is centered around <strong>JavaScript</strong>, <strong>React</strong>, and <strong>Nest.js</strong>.
           </p>
 
           <p>
-            I've worked on diverse projects ranging from enterprise platforms to <strong>Web3 solutions</strong>, where I led the frontend development of crypto-asset platforms and implemented advanced transaction logic. I’m passionate about improving UI/UX, ensuring responsive and accessible design, and staying updated with the latest tech trends.
+            I specialize in creating efficient, reusable UI components, integrating third-party APIs, and automating business processes. My work focuses on improving performance, maintainability, and user experience through clean and structured code.
           </p>
 
           <p>
-            Beyond coding, I’ve automated processes in <strong>DeFi protocols</strong>, optimized website performance, and contributed to significant user experience improvements in every project I've touched.
+            I've contributed to projects ranging from enterprise applications to <strong>Web3 platforms</strong>, where I led frontend development for crypto-asset management systems, implemented multi-transaction logic, and optimized DeFi protocol automation.
           </p>
 
           <p>
-            Feel free to reach out via email at <a className="color-blue-500 text-primary hover:underline" href="mailto:vlasandrey878@gmail.com"><strong>vlasandrey878@gmail.com</strong></a>, or connect with me on <a className="color-blue-500 text-primary hover:underline" href="https://github.com/Andryxatt" target="blank">GitHub</a> and <a className="color-blue-500 text-primary hover:underline" target="blanc" href="https://www.linkedin.com/in/andrii-vlasiuk-eng/">LinkedIn</a>!
+            I’m passionate about continuous learning, responsive design, accessibility, and delivering products that make a measurable impact.
           </p>
+
+          <p>
+            Feel free to reach out via email at{" "}
+            <a
+              className="color-blue-500 text-primary hover:underline"
+              href="mailto:vlasandrey878@gmail.com"
+            >
+              <strong>vlasandrey878@gmail.com</strong>
+            </a>
+            , or connect with me on{" "}
+            <a
+              className="color-blue-500 text-primary hover:underline"
+              href="https://github.com/Andryxatt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            and{" "}
+            <a
+              className="color-blue-500 text-primary hover:underline"
+              href="https://www.linkedin.com/in/andrii-vlasiuk-eng/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            !
+          </p>
+          <div className="mt-8 text-center">
+            <a
+              href="/Andrii_Vlasiuk_CV_2025.pdf"
+              download
+              className="inline-block bg-primary hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition-all duration-200"
+            >
+              📄 Download CV
+            </a>
+          </div>
         </div>
       </div>
     </Element>
