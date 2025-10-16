@@ -16,17 +16,16 @@ const SkillSlider = () => {
       className='cursor-pointer'
       modules={[Navigation, Pagination, Autoplay]} // Activate modules
       spaceBetween={20} // Space between slides
-      slidesPerView={3} // Number of slides to show at once
+      slidesPerView={1} // Number of slides to show at once
       loop={true}
-      autoplay={{ 
-        delay: 3000, 
+      autoplay={{
+        delay: 3000,
         disableOnInteraction: false // Important to keep autoplay after interaction
       }}
       speed={1000}
       pagination={{ clickable: true }} // Pagination
       breakpoints={{
         640: { slidesPerView: 2 },
-        768: { slidesPerView: 2 },
         1024: { slidesPerView: 3 }
       }}
     >

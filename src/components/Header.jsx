@@ -39,8 +39,8 @@ const Header = () => {
           <TbMenuDeep size={20} />
         </button>
         <nav
-          className={`${isMenuOpen ? 'absolute z-10 backdrop-blur-lg' : 'hidden'}
-          flex-col md:flex md:flex-row md:items-center md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto md:bg-transparent py-4 md:py-0 `}>
+          className={`${isMenuOpen ? 'absolute z-10 backdrop-blur-lg w-full' : 'hidden'}
+          flex-col md:flex md:flex-row md:items-center md:space-x-6 absolute md:static top-full left-0 w-full md:bg-transparent py-4 md:py-0 `}>
           <ul className='flex flex-col gap-4 opacity-70 text-semi-bold md:flex-row p-4 text-lg'>
             <li className='hover:opacity-70 cursor-pointer' onClick={() => handleNavigateAndScroll('home')}>
               Home
@@ -57,7 +57,7 @@ const Header = () => {
           </ul>
         </nav>
         <button
-          className={`border border-white rounded-md px-6 py-2 mt-4 md:mt-0 hidden md:block cursor-pointer ${isMenuOpen ? 'hidden' : ''}`}
+          className={`border border-white rounded-md px-6 py-2 mt-4 md:mt-0 w-[200px] hidden md:block cursor-pointer ${isMenuOpen ? 'hidden' : ''}`}
           onClick={() => handleNavigateAndScroll('contact')}
         >
           Contact Me

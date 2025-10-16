@@ -53,7 +53,7 @@ const Banner = () => {
           </p>
           <div className="mt-8 flex justify-center">
             <a
-             className="max-w-[200px] border border-white rounded-md px-6 py-2 mt-4 md:mt-0 hidden md:block cursor-pointer"
+             className="max-w-[200px] border border-white rounded-md px-6 py-2 mt-4 md:mt-0 cursor-pointer"
               href={`${import.meta.env.VITE_BASE_URL}Andrii_Vlasiuk_CV_2025.pdf`}
               download
             >
