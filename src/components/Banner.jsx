@@ -53,9 +53,8 @@ const Banner = () => {
           </p>
           <div className="mt-8 text-center">
             <a
-              href="/Andrii_Vlasiuk_CV_2025.pdf"
+              href={`${import.meta.env.VITE_BASE_URL}Andrii_Vlasiuk_CV_2025.pdf`}
               download
-              className="inline-block bg-primary hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition-all duration-200"
             >
               📄 Download CV
             </a>
