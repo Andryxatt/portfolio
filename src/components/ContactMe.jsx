@@ -67,14 +67,14 @@ const ContactMe = () => {
             Contact me for the tasks you need to be done in a short time.
           </h2>
           <p className="text-gray-400 text-base">
-            I’m always open to discussing new projects or opportunities.  
+            I’m always open to discussing new projects or opportunities.
             Feel free to reach out through any of the following:
           </p>
 
           {/* Соціальні посилання */}
           <div className="flex gap-5 mt-2">
             <a
-              href="https://t.me/yourtelegramusername"
+              href="https://web.telegram.org/k/#@Andryxatt"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 hover:text-primary transition duration-300"
@@ -82,7 +82,7 @@ const ContactMe = () => {
               <FaTelegramPlane size={22} /> Telegram
             </a>
             <a
-              href="https://www.linkedin.com/in/yourlinkedinprofile/"
+              href="https://www.linkedin.com/in/andrii-vlasiuk-eng/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 hover:text-primary transition duration-300"
@@ -90,7 +90,7 @@ const ContactMe = () => {
               <FaLinkedin size={22} /> LinkedIn
             </a>
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/Andryxatt"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 hover:text-primary transition duration-300"
@@ -103,7 +103,7 @@ const ContactMe = () => {
         {/* Кнопка “Contact Me” */}
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-primary hover:opacity-80 text-white py-3 px-6 rounded-md font-bold cursor-pointer transition duration-300 w-[250px]"
+          className="max-w-[200px] border border-white rounded-md px-6 py-2 mt-4 md:mt-0 hidden md:block cursor-pointer"
         >
           Contact Me
         </button>
